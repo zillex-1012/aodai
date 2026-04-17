@@ -32,7 +32,7 @@ const IMAGES_3 = [
 
 export default function Home() {
   return (
-    <div className="relative bg-white ">
+    <div className="relative bg-transparent">
       <ContainerStagger className="relative z-[9999] -mb-12 place-self-center px-6 pt-12 text-center">
         <ContainerAnimated>
           <h1 className="font-serif text-5xl font-medium md:text-7xl tracking-wide">
@@ -76,10 +76,10 @@ export default function Home() {
         }}
       />
 
-      <ContainerScroll className="relative h-[450vh]">
+      <ContainerScroll className="relative h-[800vh]">
         <ContainerSticky className="h-svh">
           <GalleryContainer className="">
-            <GalleryCol yRange={["0%", "-35%"]} className="-mt-2">
+            <GalleryCol yRange={["0%", "-75%"]} className="-mt-2">
               {IMAGES_1.map((imageUrl, index) => (
                 <img
                   key={index}
@@ -89,7 +89,7 @@ export default function Home() {
                 />
               ))}
             </GalleryCol>
-            <GalleryCol className="mt-[-50%]" yRange={["10%", "-25%"]}>
+            <GalleryCol className="mt-[-50%]" yRange={["0%", "-65%"]}>
               {IMAGES_2.map((imageUrl, index) => (
                 <img
                   key={index}
@@ -99,7 +99,7 @@ export default function Home() {
                 />
               ))}
             </GalleryCol>
-            <GalleryCol yRange={["0%", "-35%"]} className="-mt-2">
+            <GalleryCol yRange={["0%", "-75%"]} className="-mt-2">
               {IMAGES_3.map((imageUrl, index) => (
                 <img
                   key={index}
