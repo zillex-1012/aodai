@@ -36,7 +36,7 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   
-  --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Be Vietnam Pro', var(--font-be-vietnam), var(--font-geist-sans), sans-serif;
   --font-serif: 'Cormorant Garamond', ui-serif, Georgia, serif;
 }
 

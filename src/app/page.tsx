@@ -35,15 +35,15 @@ export default function Home() {
     <div className="relative bg-white ">
       <ContainerStagger className="relative z-[9999] -mb-12 place-self-center px-6 pt-12 text-center">
         <ContainerAnimated>
-          <h1 className="font-serif text-4xl font-extralight  md:text-5xl">
+          <h1 className="font-serif text-5xl font-medium md:text-7xl tracking-wide">
             Sắc Việt{" "}
-            <span className=" font-serif font-extralight text-primary">
+            <span className="font-serif font-semibold text-primary">
               Áo Dài
             </span>
           </h1>
         </ContainerAnimated>
         <ContainerAnimated>
-          <h1 className="font-serif text-4xl font-extralight md:text-5xl">
+          <h1 className="font-serif text-3xl font-medium md:text-4xl mt-4 text-secondary">
             Di sản văn hóa nghìn năm
           </h1>
         </ContainerAnimated>
@@ -83,7 +83,7 @@ export default function Home() {
               {IMAGES_1.map((imageUrl, index) => (
                 <img
                   key={index}
-                  className="aspect-video block h-auto max-h-full w-full rounded-md object-cover shadow"
+                  className="aspect-[2/3] block h-auto max-h-full w-full rounded-md object-cover shadow-xl"
                   src={imageUrl}
                   alt="gallery item"
                 />
@@ -93,7 +93,7 @@ export default function Home() {
               {IMAGES_2.map((imageUrl, index) => (
                 <img
                   key={index}
-                  className="aspect-video block h-auto max-h-full w-full rounded-md object-cover shadow"
+                  className="aspect-[2/3] block h-auto max-h-full w-full rounded-md object-cover shadow-xl"
                   src={imageUrl}
                   alt="gallery item"
                 />
@@ -103,7 +103,7 @@ export default function Home() {
               {IMAGES_3.map((imageUrl, index) => (
                 <img
                   key={index}
-                  className="aspect-video block h-auto max-h-full w-full rounded-md object-cover shadow"
+                  className="aspect-[2/3] block h-auto max-h-full w-full rounded-md object-cover shadow-xl"
                   src={imageUrl}
                   alt="gallery item"
                 />
