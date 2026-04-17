@@ -1,33 +1,33 @@
-import { 
+import {
   ContainerAnimated,
   ContainerScroll,
   ContainerStagger,
   ContainerSticky,
   GalleryCol,
-  GalleryContainer 
+  GalleryContainer
 } from "@/components/blocks/animated-gallery"
 import { Button } from "@/components/ui/button"
 import { VideoIcon } from "lucide-react"
 
 const IMAGES_1 = [
-  "https://images.unsplash.com/photo-1540206395-68808572332f?auto=format&fit=crop&q=80&w=1000",
-  "https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=1000",
-  "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?auto=format&fit=crop&q=80&w=1000",
-  "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&q=80&w=1000",
+  "https://images.unsplash.com/photo-1681566803970-ca4988973abe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fCVDMyVBMW8lMjBkJUMzJUEwaSUyMGMlQzMlQTFjaCUyMHQlQzMlQTJufGVufDB8fDB8fHww",
+  "https://images.unsplash.com/photo-1772443325335-fa757433a1ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fCVDMyVBMW8lMjBkJUMzJUEwaSUyMGMlQzMlQTFjaCUyMHQlQzMlQTJufGVufDB8fDB8fHww",
+  "https://images.unsplash.com/photo-1772698262913-be650605e900?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fCVDMyVBMW8lMjBkJUMzJUEwaSUyMGMlQzMlQTFjaCUyMHQlQzMlQTJufGVufDB8fDB8fHww",
+  "https://images.unsplash.com/photo-1772698263798-d47046847f15?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY2fHwlQzMlQTFvJTIwZCVDMyVBMGklMjBjJUMzJUExY2glMjB0JUMzJUEybnxlbnwwfHwwfHx8MA%3D%3D",
 ]
 
 const IMAGES_2 = [
-  "https://images.unsplash.com/photo-1508213780696-cf411aa63b51?auto=format&fit=crop&q=80&w=1000",
-  "https://images.unsplash.com/photo-1571455786673-9d9d6c194f90?auto=format&fit=crop&q=80&w=1000",
-  "https://images.unsplash.com/photo-1616091093714-c64882e9ab55?auto=format&fit=crop&q=80&w=1000",
-  "https://images.unsplash.com/photo-1599839619722-39751411883c?auto=format&fit=crop&q=80&w=1000",
+  "https://images.unsplash.com/photo-1775794180126-bcd267f6badb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fCVDMyVBMW8lMjBkJUMzJUEwaSUyMGxlbXVyfGVufDB8fDB8fHww",
+  "https://images.unsplash.com/photo-1761635491372-271565760322?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fCVDMyVBMW8lMjBkJUMzJUEwaSUyMGxlbXVyfGVufDB8fDB8fHww",
+  "https://images.unsplash.com/photo-1710828730314-82cb9e0943bb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fCVDMyVBMW8lMjBkJUMzJUEwaSUyMGxlbXVyfGVufDB8fDB8fHww",
+  "https://images.unsplash.com/photo-1768452570697-62c8b864dd3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fCVDMyVBMW8lMjBkJUMzJUEwaSUyMGxlbXVyfGVufDB8fDB8fHww",
 ]
 
 const IMAGES_3 = [
-  "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?auto=format&fit=crop&q=80&w=1000",
-  "https://images.unsplash.com/photo-1611039800531-df13eb80c880?auto=format&fit=crop&q=80&w=1000",
-  "https://images.unsplash.com/photo-1612255330052-117562479e9a?auto=format&fit=crop&q=80&w=1000",
-  "https://images.unsplash.com/photo-1590212151175-e58edd9bb56f?auto=format&fit=crop&q=80&w=1000",
+  "https://images.unsplash.com/photo-1767603753231-0a93a5608e31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fCVDMyVBMW8lMjBkJUMzJUEwaSUyMHRydXklRTElQkIlODFuJTIwdGglRTElQkIlOTFuZ3xlbnwwfHwwfHx8MA%3D%3D",
+  "https://images.unsplash.com/photo-1705049316557-60cf23c139ca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fCVDMyVBMW8lMjBkJUMzJUEwaSUyMHRydXklRTElQkIlODFuJTIwdGglRTElQkIlOTFuZ3xlbnwwfHwwfHx8MA%3D%3D",
+  "https://images.unsplash.com/photo-1767603752934-6ba5227e3b2f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fCVDMyVBMW8lMjBkJUMzJUEwaSUyMHRydXklRTElQkIlODFuJTIwdGglRTElQkIlOTFuZ3xlbnwwfHwwfHx8MA%3D%3D",
+  "https://images.unsplash.com/photo-1706447734482-8aceec3b620a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMxfHwlQzMlQTFvJTIwZCVDMyVBMGklMjB0cnV5JUUxJUJCJTgxbiUyMHRoJUUxJUJCJTkxbmd8ZW58MHx8MHx8fDA%3D",
 ]
 
 export default function Home() {
@@ -67,12 +67,13 @@ export default function Home() {
         </ContainerAnimated>
       </ContainerStagger>
 
-      <div className="pointer-events-none absolute z-10 h-[70vh] w-full "
-      style={{
-            background: "linear-gradient(to right, #7c2d12, #ea580c, #7c2d12)",
-            filter: "blur(84px)",
-            mixBlendMode: "screen",
-          }}
+      <div className="pointer-events-none absolute z-10 h-[80vh] w-full "
+        style={{
+          background: "linear-gradient(to right, #991b1b, #f59e0b, #991b1b)",
+          filter: "blur(100px)",
+          mixBlendMode: "screen",
+          opacity: 0.4
+        }}
       />
 
       <ContainerScroll className="relative h-[450vh]">
